@@ -1,0 +1,24 @@
+<div data-uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <nav class="uk-navbar-container" data-uk-navbar="dropbar: true">
+        <div class="uk-navbar-left">
+            <a class="uk-navbar-item uk-logo" href="/">
+                <img width="200" height="50" src="/public/build/images/logo.svg" alt="Todsicher" />
+            </a>
+
+            <div class="uk-visible@s">
+                {% include './navigation/navbar.html.twig' %}
+            </div>
+        </div>
+            <div class="uk-navbar-right">
+
+                <div class="uk-hidden@s">
+                    <a class="uk-navbar-toggle" href="#off-canvas" data-uk-toggle>
+                        <span data-uk-navbar-toggle-icon></span>
+                    </a>
+
+                    {% include './navigation/offcanvas.html.twig' %}
+                </div>
+
+        </div>
+    </nav>
+</div>
